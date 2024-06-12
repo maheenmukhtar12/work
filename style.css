@@ -1,0 +1,143 @@
+*{
+                         margin: 0;
+                         padding: 0;
+                         font-family: 'Franklin Gothic Medium', ;
+                         box-sizing: border-box;
+}
+body{
+                         display: flex;
+                         justify-content: center;
+                         text-align: center;
+                         min-height: 100vh;
+                         background-color:#fff
+                          ;
+
+                         
+
+                       
+}
+.image{
+                         position: relative;
+                         -webkit-box-reflect:below -12px  linear-gradient(transparent,rgba(0,0,0,0.2));
+}
+.image span{
+                         position: relative;
+                         top: 350px;
+                         display: inline-block;
+                         color:#fff;
+                         font-size: 2em;
+                         text-transform: uppercase ;
+                         animation: animate 1s ease-in-out infinite;
+                         animation-delay: calc(0.1 * var(--i));
+                          filter: drop-shadow(15px 1px 15px rgba(97, 13, 13, 0.662));  
+                    
+                         font-size: 40px;
+                         font-family: 'Trebuchet MS', ;
+                      
+
+}
+@keyframes animate{
+                         0%{
+                                                  transform: translateY(0px);
+                         }
+                         20%{
+                                                  transform: translateY(-20px);
+                         }
+                         40% ,100%{
+                                                  transform: translateY(0px);
+                         }
+                       
+}
+.one {
+                         background-color: #048eaa;  
+                         border: none;
+                         color: white;
+                         padding: 15px 32px;
+                         text-align: center;
+                         text-decoration: none;
+                         display: inline-block;
+                         font-size: 18px;
+                        height: 100px;
+                        margin: 300px;
+                        width: 180px;
+                        border-radius: 50px;
+                        background-color: #fa7dfc
+                       }
+.maheen{
+                         
+                         display: flex;
+                         justify-content: center;
+                         text-align: center;
+                         min-height: 100vh;
+                         background: radial-gradient(#4c0c0c,#000);
+
+}
+.container{
+                         position: relative;
+                         height: 430px;
+                         width: 100%;
+                         display: flex;
+                         justify-content: center;
+                         border-bottom: 1px,solid rgba(225,225,225,0.05);    
+                         -webkit-box-reflect: below 1px linear-gradient(transparent,transparent,transparent,transparent,#0005);
+                       
+}
+.heart{
+                         position: relative;
+                         height: 300px;
+                         width: 300px;
+}
+.heart::before{
+                         content: '';
+                         position: absolute;
+                         top: 170px;
+                         left: 20px;
+                         width: 200px;
+                         height: 300px;
+                         background:#6a1629;
+                         border-top-left-radius: 100px;
+                         border-top-right-radius: 100px;
+                         rotate: 315deg;
+                         z-index: 100;
+                         animation: animateHeart 2s steps(1) infinite
+
+}
+.heart::after{
+                         content: '';
+                         position: absolute;
+                         top: 170px;
+                         left: 92px;
+                         width: 200px;
+                         height: 300px;
+                         background:#6a1629;
+                         border-top-left-radius: 100px;
+                         border-top-right-radius: 100px;
+                         rotate: 45deg;
+                         z-index: 100;
+                         animation: animateHeart 2s steps(1) infinite
+
+}
+@keyframes  animateHeart{
+                         0%,94%,100%
+                         {
+                                                  filter: none;
+                         }
+                         95%
+                         {
+                          filter: drop-shadow(0 0 50px #f00)  drop-shadow(0 0 150px #f00);
+                          background: #f00;
+                           
+
+                         }
+
+                                         
+}
+.rutab{
+                         position: relative;
+                         left: 5px;
+                         top: 200px;
+                         font-size: xx-large;
+                         color: #f00;
+                         font-weight: 100;
+                         font-family: 'Courier New', Courier, monospace;
+}
